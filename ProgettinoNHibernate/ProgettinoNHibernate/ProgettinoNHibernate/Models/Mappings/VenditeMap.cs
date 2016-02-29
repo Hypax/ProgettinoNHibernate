@@ -10,11 +10,11 @@ namespace ProgettinoNHibernate.Models.Mappings
         {
             mapping.Table("vendite");
             mapping.Id(x => x.Id, "idVendita");
-            mapping.Map(x => x.IdData, "idData");
-            mapping.Map(x => x.IdNegozio, "idNegozio");
-            mapping.Map(x => x.IdProdotto, "idProdotto");
-            mapping.Map(x => x.Prezzo, "prezzo").Nullable();
-            mapping.Map(x => x.Quantita, "quantita").Nullable();
+            mapping.HasMany<Tempo>(x => x.IdData).KeyColumn("idData").Inverse();
+            mapping.HasMany<Negozi>(x => x.IdNegozio).KeyColumn("idNegozio").Inverse();
+            mapping.HasMany<Prodotti>(x => x.IdProdotto).KeyColumn("idProdotto").Inverse();
+            mapping.Map(x => x.Prezzo, "prezzo").Nullable().Length(45);
+            mapping.Map(x => x.Quantita, "quantita").Nullable().Length(45);
         }
     }
 
