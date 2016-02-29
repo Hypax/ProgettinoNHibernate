@@ -10,7 +10,7 @@ namespace ProgettinoNHibernate.Models.Mappings
         {
             mapping.Table("negozi");
             mapping.Id(x => x.Id, "idNegozio");
-            mapping.Map(x => x.Descrizione, "descrizione").Length(255).Nullable();
+            mapping.Map(x => x.Descrizione, "descrizione").Nullable();
             mapping.Map(x => x.Citta, "citta").Nullable();
             mapping.Map(x => x.Indirizzo, "indirizzo").Nullable();
         }

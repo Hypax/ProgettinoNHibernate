@@ -10,6 +10,7 @@ namespace ProgettinoNHibernate.Models.Entities
     [Serializable]
     public class Vendite : IdentifiedEntity
     {
+        public virtual int IdVendita { get; set; }
         public virtual int IdProdotto { get; set; }
         public virtual int IdNegozio { get; set; }
         public virtual int IdData { get; set; }
