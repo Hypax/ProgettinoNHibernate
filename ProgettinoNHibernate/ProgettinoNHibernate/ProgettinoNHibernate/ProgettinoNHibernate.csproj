@@ -189,7 +189,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entities\EnityBase.cs" />
+    <Compile Include="Models\Entities\Interceptor.cs" />
+    <Compile Include="Models\Entities\SessionFactory.cs" />
+    <Compile Include="Models\Entities\EntityBase.cs" />
     <Compile Include="Models\Entities\IdentifiedEntity.cs" />
     <Compile Include="Models\Entities\Negozi.cs" />
     <Compile Include="Models\Entities\Prodotti.cs" />
@@ -202,6 +204,7 @@
     <Compile Include="Models\Mappings\ProdottiMap.cs" />
     <Compile Include="Models\Mappings\TempoMap.cs" />
     <Compile Include="Models\Mappings\VenditeMap.cs" />
+    <Compile Include="Models\Test\TestMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
